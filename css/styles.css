@@ -1,0 +1,11 @@
+#links > .col {
+    height:100%;
+}
+
+#links > .col > .card {
+    height: 100%;
+}
+
+#language-select {
+    margin-right : 3%;
+}
