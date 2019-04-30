@@ -1,11 +1,49 @@
-#links > .col {
+p, span, h1 {
+    opacity: 90%;
+}
+
+header div > h1 {
+    /* width:30%; */
+    font-size:250%;
+    margin-left:10%;
+}
+
+header div > p,ul {
+    /* width:70%; */
+    margin-left  : 40%;
+}
+
+/* #links > .col {
     height:100%;
 }
 
 #links > .col > .card {
     height: 100%;
-}
+} */
 
 #language-select {
     margin-right : 3%;
+}
+
+#profile .card {
+    font-size : 90%;
+}
+
+.card-image {
+    padding-top: 5%;
+}
+
+.desc-title {
+    display: inline-block;
+    width : 150px;
+}
+
+.sticky-nav {
+    top:0;
+    position:fixed;
+    z-index:1;
+}
+
+.spaced-title {
+    margin-top: 8.9rem;
 }

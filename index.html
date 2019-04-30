@@ -26,7 +26,29 @@
 	</head>
 
 <body class="grey lighten-4">
-	<header>
+	<header class="header">
+
+		<div id="profile" class="row hide-on-med-and-down">
+			<h1 class="col s4">Amaury JASPAR</h1>
+			<div class="col s8">
+				<p>Étudiant à l'IUT Informatique de Montpellier - Sète</p>
+				<ul>
+					<li>
+						<span class="desc-title">Age</span>
+						<span class="desc-content">20</span>
+					</li>
+					<li>
+						<span class="desc-title">Email personnel</span>
+						<span class="desc-content">a.jaspar@protonmail.com</span>
+					</li>
+					<li>
+							<span class="desc-title">Email universitaire</span>
+							<span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
+						</li>
+				</ul>
+			</div>
+		</div>
+
 		<nav class="blue-grey">
 			<a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons right">language</i></a>
 			<ul id="language-list" class="dropdown-content">
@@ -60,9 +82,9 @@
 
 	<div>	
 		<main>
-			<div id="profile" class="container">
-				<h1>Profil</h1>
-				<div class="row">
+			<div class="container">
+				<h1 id="first-header">Profil</h1>
+				<!-- <div class="row">
 					<div class="card col s12">
 						<div class="card-image">
 							<img>
@@ -72,17 +94,17 @@
 							<p class="center">Étudiant à l'IUT informatique de Montpellier</p>
 						</div>
 					</div>
-				</div>
-				<div id="links" class="row">
+				</div> -->
+				<div id="links" class="row center ">
 					<!-- <div class="col s12 m7"> -->
 						<div class="col s12 m4">
 							<div class="card">
-								<div class="card-image center">
-										<a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-5x"></i></a>
+								<div class="card-image">
+										<a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a>
 								</div>
 								<div class="card-content">
-									<span class="card-title">Mon Github</span>
-									<p>Projets professionnels et scolaires</p>
+									<span class="card-title center">Mon Github</span>
+									<p class="center">Projets professionnels et scolaires</p>
 								</div>
 							</div>
 						</div>
@@ -90,8 +112,8 @@
 					<!-- <div class="col s12 m7"> -->
 						<div class="col s12 m4">
 							<div class="card">
-								<div class="card-image center">
-									<a href="https://gitlab.com/AmauryJ"><i class="fab fa-gitlab fa-5x"></i></a>
+								<div class="card-image">
+									<a href="https://gitlab.com/AmauryJ"><i class="fab fa-gitlab fa-3x"></i></a>
 								</div>
 								<div class="card-content">
 									<span class="card-title halign">Mon Gitlab</span>
@@ -102,7 +124,7 @@
 						<div class="col s12 m4">
 							<div class="card">
 								<div class="card-image center">
-									<a href="https://www.linkedin.com/in/amaury-jaspar-3b0705170/"><i class="fab fa-linkedin fa-5x"></i></a>
+									<a href="https://www.linkedin.com/in/amaury-jaspar-3b0705170/"><i class="fab fa-linkedin fa-3x"></i></a>
 								</div>
 								<div class="card-content">
 									<span class="card-title">Linkedin</span>
@@ -225,10 +247,33 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+		<!-- Sidenav pop-up -->
+
 		<script>
 				$(document).ready(function(){
 					$('.sidenav').sidenav();
 				});
+		</script>
+
+		<!-- Sticky navbar script -->
+
+		<script>
+			$(document).ready(function() {
+				$(window).scroll(function() {
+					if ($('#profile').is(":visible")) {
+						if ($(window).scrollTop()>150.5) {
+							$('nav').addClass('sticky-nav');
+							$('#first-header').addClass('spaced-title');
+						} else {
+							$('nav').removeClass('sticky-nav');
+							$('#first-header').removeClass('spaced-title');
+						}
+					} else {
+						$('nav').addClass('sticky-nav');
+						$('#first-header').addClass('spaced-title');
+					}
+				});
+			});
 		</script>
 	</body>
 </html>
