@@ -7,7 +7,7 @@ header div > h1 {
     margin-left:10%;
 }
 
-header div > p:not(#name),ul {
+#top-info-list {
     /* width:70%; */
     margin-left  : 40%;
 }
