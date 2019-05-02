@@ -4,7 +4,6 @@ p, span, h1 {
 
 header div > h1 {
     /* width:30%; */
-    font-size:250%;
     margin-left:10%;
 }
 
@@ -30,7 +29,10 @@ header div > p,ul {
 }
 
 .card-image {
-    padding-top: 5%;
+    padding-top: 5%;			<div id="contact" class="container">
+    <h1>Contact</h1>
+
+</div>
 }
 
 .desc-title {
@@ -46,4 +48,21 @@ header div > p,ul {
 
 .spaced-title {
     margin-top: 8.9rem;
+}
+
+#c-logo {
+    font-size:200%;
+    font-weight: 500;
+}
+
+figure {
+    width:60%;
+}
+
+svg {
+    width:100%;
+}
+
+.chart[data-percent=60] {
+    stroke-dashoffset:60%; 
 }
