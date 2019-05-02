@@ -20,6 +20,11 @@ header div > p,ul {
     height: 100%;
 } */
 
+#name {
+    font-size:225%;
+   padding-left: 12%;
+}
+
 #language-select {
     margin-right : 3%;
 }
@@ -29,10 +34,7 @@ header div > p,ul {
 }
 
 .card-image {
-    padding-top: 5%;			<div id="contact" class="container">
-    <h1>Contact</h1>
-
-</div>
+    padding-top: 5%;
 }
 
 .desc-title {
@@ -61,8 +63,22 @@ figure {
 
 svg {
     width:100%;
+    height: 50%;
 }
 
 .chart[data-percent=60] {
     stroke-dashoffset:60%; 
+}
+
+.collection li {
+    height : 102px;
+}
+
+.collection p {
+    margin-bottom: 0;
+}
+
+.collection figure {
+    margin-top : 4%;
+    height:20px;
 }

@@ -29,7 +29,7 @@
 	<header class="header">
 
 		<div id="profile" class="row hide-on-med-and-down">
-			<h1 class="col s4">Amaury JASPAR</h1>
+			<h1  id="name" class="col s4">Amaury JASPAR</h1>
 			<div class="col s8">
 				<p>Étudiant à l'IUT Informatique de Montpellier - Sète</p>
 				<ul>
@@ -50,7 +50,7 @@
 		</div>
 
 		<nav class="blue-grey">
-			<a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons right">language</i></a>
+			<a href="./index-eng.html" class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons right">language</i></a>
 			<ul id="language-list" class="dropdown-content">
 				<li><a href="index-eng.html">English</a></li>
 				<li><a href="index.html">Français</a></li>
@@ -143,7 +143,15 @@
 									<ul class="collection z-depth-1">
 										<li class="collection-item">
 											<i class="fab fa-java fa-3x"></i>
-											<span class="hide-on-small-only">Java</span>
+											<figure class="chart right" data-percent="60">
+												<svg>
+													<rect width="100%" height="10"/>
+												</svg>
+											</figure>
+											<p class="hide-on-small-only">Java</p>
+										</li>
+										<li class="collection-item">
+											<span id="c-logo" >C</span>
 											<figure class="chart right" data-percent="60">
 												<svg>
 													<rect width="100%" height="10"/>
@@ -151,15 +159,23 @@
 											</figure>
 										</li>
 										<li class="collection-item">
-											<span id="c-logo" >C</span>
-										</li>
-										<li class="collection-item">
 											<i class="fab fa-html5 fa-3x">/</i>
 											<i class="fab fa-css3-alt fa-3x"></i>
+											<figure class="chart right" data-percent="60">
+												<svg>
+													<rect width="100%" height="10"/>
+												</svg>
+											</figure>
+											<p>HTML / CSS</p>
 										</li>
 										<li class="collection-item">
 											<i class="fas fa-database fa-3x"></i>
-											<span>SQL / PLSQL</span>
+											<figure class="chart right" data-percent="60">
+												<svg>
+													<rect width="100%" height="10"/>
+												</svg>
+											</figure>
+											<p>SQL / PLSQL</p>
 										</li>
 									</ul>
 							<!-- </div> -->
