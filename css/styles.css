@@ -1,5 +1,5 @@
-p, span, h1 {
-    opacity: 90%;
+h1 {
+    font-size:150%;
 }
 
 header div > h1 {
@@ -7,7 +7,7 @@ header div > h1 {
     margin-left:10%;
 }
 
-header div > p,ul {
+header div > p:not(#name),ul {
     /* width:70%; */
     margin-left  : 40%;
 }
@@ -20,10 +20,25 @@ header div > p,ul {
     height: 100%;
 } */
 
-#name {
-    font-size:225%;
-   padding-left: 12%;
+#profile {
+    height:160px;
+    margin-bottom:0px;
 }
+
+header > div:first-child > div {
+    height: inherit;
+}
+
+#profile-picture {
+    margin-top:1%;
+    width:15%;
+    height:auto;
+}
+
+/* #name {
+    font-size:100%;
+   padding-left: 12%;
+} */
 
 #language-select {
     margin-right : 3%;
@@ -49,17 +64,12 @@ header div > p,ul {
 }
 
 .spaced-title {
-    margin-top: 8.9rem;
+    margin-top: 7rem;
 }
 
-#c-logo {
-    font-size:200%;
-    font-weight: 500;
-}
-
-figure {
+/* figure {
     width:60%;
-}
+} */
 
 svg {
     width:100%;
@@ -79,6 +89,13 @@ svg {
 }
 
 .collection figure {
-    margin-top : 4%;
+    /* margin-top : 3%; */
+    margin-right:0;
     height:20px;
+    padding-left:0;
+    padding-right:0;
 }
+
+/* .collection i {
+    margin-left:50%;
+} */
