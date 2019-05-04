@@ -1,5 +1,9 @@
-h1 {
-    font-size:150%;
+* {
+    font-family: 'ubuntu','roboto','sans-serif';
+}
+
+p,h1,span,td,th {
+    opacity: 0.9;
 }
 
 header div > h1 {
@@ -85,6 +89,10 @@ nav div:first-child {
     margin-right:5%;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 /* figure {
     width:60%;
 } */
@@ -93,6 +101,11 @@ svg {
     width:100%;
     height: 50%;
 }
+
+
+/* rect.percent {
+    fill : #62757f;
+} */
 
 
 .chart[data-percent=60] {
@@ -115,6 +128,3 @@ svg {
     padding-right:0;
 }
 
-/* .collection i {
-    margin-left:50%;
-} */
