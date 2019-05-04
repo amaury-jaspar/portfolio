@@ -53,8 +53,8 @@
 		</div>
 
 		<nav class="blue-grey darken-2">
-			<div>
-				<a href="./index-eng.html" class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons right">language</i></a>
+			<div class="right">
+				<a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
 				<ul id="language-list" class="dropdown-content">
 					<li><a href="index-eng.html">English</a></li>
 					<li><a href="index.html">Français</a></li>
@@ -154,7 +154,7 @@
 											</div>
 											<figure class="chart col s8" data-percent="60">
 												<svg>
-													<rect width="60%" height="10"/>
+													<rect width="60%" height="10" stroke="black" fill="red" stroke-width="3"/>
 												</svg>
 											</figure>
 										</li>
@@ -165,7 +165,7 @@
 											</div>
 											<figure class="chart col s8" data-percent="60">
 												<svg>
-													<rect width="100%" height="10"/>
+													<rect width="100%" height="10" stroke="black" fill="red" stroke-width="3"/>
 												</svg>
 											</figure>
 										</li>
@@ -177,7 +177,7 @@
 											</div>	
 											<figure class="chart col s8" data-percent="60">
 												<svg>
-													<rect width="100%" height="10"/>
+													<rect width="100%" height="10" stroke="black" fill="red" stroke-width="3"/>
 												</svg>
 											</figure>
 										</li>
@@ -323,6 +323,15 @@
 				$(document).ready(function(){
 					$('.sidenav').sidenav();
 				});
+		</script>
+
+		<!-- Dropdown lanuage menu -->
+
+		<script>
+			$(document).ready(function() {
+				$('.modal').modal();
+				$('.dropdown-trigger').dropdown();
+			});
 		</script>
 
 		<!-- Sticky navbar script -->
