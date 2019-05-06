@@ -34,9 +34,14 @@ header > div:first-child > div {
 }
 
 #profile-picture {
-    margin-top:1%;
-    width:15%;
+    padding:2px;
+    width:25%;
     height:auto;
+    margin-left:auto;
+}
+
+#profile-info-left {
+    margin-left : auto;
 }
 
 header .material-icons {
@@ -66,7 +71,7 @@ header .material-icons {
 
 .desc-title {
     display: inline-block;
-    width : 150px;
+    width : 140px;
     /* color:#c1d5e0; */
    font-weight:bold;
 }
@@ -91,6 +96,14 @@ nav div:first-child {
 
 h1 {
     font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 /* figure {
