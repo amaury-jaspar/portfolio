@@ -8,7 +8,7 @@ $(document).ready(function(){
     // Dropdown menus
     $('.modal').modal();
     $('.dropdown-trigger').dropdown({
-        hover: true,
+        /*hover: true,*/
         coverTrigger: false,
         constrainWidth: false
     });

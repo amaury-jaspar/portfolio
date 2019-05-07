@@ -10,6 +10,10 @@ p,h1,span,td,th {
     color:#62757f;
 }
 
+#skills  .collection li div:first-child {
+    padding: 0;
+}
+
 #language-select {
     margin-right : 3%;
 }
@@ -72,4 +76,14 @@ svg {
     height:20px;
     padding-left:0;
     padding-right:0;
+}
+
+#profile-section .card {
+    height: 100%;
+}
+
+@media(min-width: 600px) {
+    #links {
+        display: flex;
+    } 
 }
