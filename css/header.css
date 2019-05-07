@@ -2,6 +2,10 @@ header div > h1 {
     margin-left:10%;
 }
 
+/* nav div:first-child {
+    margin-right:5%;
+} */
+
 #top-info-list {
     margin-left  : 40%;
 }
@@ -28,4 +32,21 @@ header > div:first-child > div {
 
 header .material-icons {
     color: white;
+}
+
+.collapsible-header span {
+    padding: 0 16px;
+    font-weight: 500;
+} 
+
+.sidenav .collapsible-body  li a {
+    padding: 0 23.5px 0 50px;
+}
+
+.nav-wrapper div:first-child  {
+    margin-right:5%;
+}
+
+#slide-out li:first-child div:nth-child(2) {
+    margin-top:3%;
 }

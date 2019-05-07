@@ -64,48 +64,56 @@
 		</div>
 
 		<nav class="blue-grey darken-2">
-			
+			<div class="nav-wrapper">
+				<div class="right">
+					<div>
+						<a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
+					</div>
+					<ul id="language-list" class="dropdown-content blue-grey darken-2"">
+						<li><a class="white-text" href="./index.html">English</a></li>
+						<li><a class="white-text" href="./docs/fr/index.html">French</a></li>
+					</ul>
+				</div>
+				<div class="container">
+					<a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<a href="./index.html"><i class="material-icons left hide-on-med-and-down">home</i></a>
 
-			<div class="nav-wrapper container ">
-					<div class="right">
-							<div>
-								<a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
-							</div>
-							<ul id="language-list" class="dropdown-content blue-grey darken-2"">
-								<li><a class="white-text" href="./index.html">English</a></li>
-								<li><a class="white-text" href="./docs/fr/index.html">French</a></li>
+					<ul id="nav-top" class="right hide-on-med-and-down">
+						<li><a href="#profile-section" title="Profile">Profile</a></li>
+						<li><a href="#skills" title="Skills">Skills</a></li>
+						<li><a href="#experience" title="Experience">Experience</a></li>
+						<li><a class="dropdown-trigger" data-target="project-list" title="Projects">Projects</a></li>
+							<ul id="project-list" class="dropdown-content blue-grey darken-2">
+								<li><a class="white-text" href="./docs/eng/projet-dominion.html">Dominion project</a></li>
+								<li><a class="white-text" href="./docs/eng/rpg-manager.html">RPG Manager</a></li>
 							</ul>
-						</div>
-				<a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-				<a href="./index.html"><i class="material-icons left hide-on-med-and-down">home</i></a>
-				
-				<ul id="nav-top" class="right hide-on-med-and-down">
-					<li><a href="#profile-section" title="Profile">Profile</a></li>
-					<li><a href="#skills" title="Skills">Skills</a></li>
-					<li><a href="#experience" title="Experience">Experience</a></li>
-					<li><a class="dropdown-trigger" data-target="project-list" title="Projects">Projects</a></li>
-						<ul id="project-list" class="dropdown-content blue-grey darken-2">
-							<li><a class="white-text" href="./docs/eng/projet-dominion.html">Dominion project</a></li>
-							<li><a class="white-text" href="./docs/eng/rpg-manager.html">RPG Manager</a></li>
-						</ul>
-				</ul>
+					</ul>
+				</div>
 			</div>
 		</nav>
 
 		<ul id="slide-out" class="sidenav blue-grey">
-			<li class="user-view valign-wrapper">
-				<span class="white-text">Amaury JASPAR</span>
-				<span><a href="./index.html"><i class="material-icons right">home</i></a></span>
+			<li class="user-view row">
+				<div class="white-text col s10">Amaury JASPAR</div>
+				<div class="valign-wrapper col s2"><a href="./index.html"><i class="material-icons right">home</i></a></div>
 			</li>
 			<li><div class="divider"></div></li>
 			<li><a href="#profile-section" title=Profile" class="white-text">Profile</a></li>
 			<li><a href="#skills" title="Skills" class="white-text">Skills</a></li>
 			<li><a href="#experience" title="Experience" class="white-text">Experience</a></li>
-			<li><a href="#projets" title="Projects" class="white-text dropdown-trigger" data-target="side-project-list">Projects</a></li>
-				<ul id="side-project-list" class="dropdown-content blue-grey darken-2">
-					<li><a class="white-text" href="./docs/eng/projet-dominion.html">Dominion project</a></li>
-					<li><a class="white-text" href="./docs/eng/rpg-manager.html">RPG Manager</a></li>
-				</ul>
+			<li>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><span class="white-text">Projects</span></div>
+                        <div class="collapsible-body">
+                         	<ul class="blue-grey darken-2">
+                                <li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
+                                <li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
 		</ul>
 
 	</header>

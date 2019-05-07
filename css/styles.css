@@ -2,7 +2,7 @@
     font-family: 'ubuntu','roboto','sans-serif';
 }
 
-p,h1,span,td,th {
+p,h1,span,td,th,a {
     opacity: 0.9;
 }
 
@@ -12,10 +12,6 @@ p,h1,span,td,th {
 
 #skills  .collection li div:first-child {
     padding: 0;
-}
-
-#language-select {
-    margin-right : 3%;
 }
 
 .card-image {
@@ -40,10 +36,6 @@ p,h1,span,td,th {
 
 .spaced-title {
     margin-top: 7rem;
-}
-
-nav div:first-child {
-    margin-right:5%;
 }
 
 h1 {

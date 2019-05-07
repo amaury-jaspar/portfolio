@@ -33,7 +33,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
                 <!-- Local JavaScript -->
-        <script src ="./js/script.js"></script>
+        <script src ="../../js/script.js"></script>
     
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
@@ -41,46 +41,54 @@
     <body class="grey lighten-4">
         <header class="header">
 
-            <nav class="blue-grey darken-2">
-                <div class="right">
-                    <div>
-                        <a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
-                    </div>
-                    <ul id="language-list" class="dropdown-content blue-grey darken-2"">
-                        <li><a class="white-text" href="./docs/eng/index.html">English</a></li>
-                        <li><a class="white-text" href="index.html">French</a></li>
-                    </ul>
+        <nav class="blue-grey darken-2">
+            <div class="right">
+                <div>
+                    <a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
+                </div>
+                <ul id="language-list" class="dropdown-content blue-grey darken-2"">
+                    <li><a class="white-text" href="./docs/eng/index.html">English</a></li>
+                    <li><a class="white-text" href="index.html">French</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-wrapper container ">
+                <a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+                <div class="col s12 hide-on-small-only">
+                    <a href="../../index.html"><i class="material-icons left">home</i></a>
+                    <a href="#!" class="breadcrumb left">Dominion project</a>
                 </div>
 
-                <div class="nav-wrapper container ">
-                    <a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-                    <div class="col s12 hide-on-small-only">
-                        <a href="../../index.html"><i class="material-icons left">home</i></a>
-                        <a href="#!" class="breadcrumb left">Dominion project</a>
-                    </div>
-
-                    <ul id="nav-top" class="right hide-on-med-and-down">
-                            <li><a href="#profil" title="Profile">Profile</a></li>
-                            <li><a href="#experience" title="Experience">Experience</a></li>
-                            <li><a href="#skills" title="Skills">Skills</a></li>
-                            <li><a href="#projets" title="Projects" class="white-text dropdown-trigger" data-target="side-project-list">Projects</a></li>
-                                <ul id="project-list" class="dropdown-content blue-grey darken-2">
+                <ul id="nav-top" class="right hide-on-med-and-down">
+                        <li><a href="#profil" title="Profile">Profile</a></li>
+                        <li><a href="#experience" title="Experience">Experience</a></li>
+                        <li><a href="#skills" title="Skills">Skills</a></li>
+                        <li><a href="#projets" title="Projects" class="white-text dropdown-trigger" data-target="project-list">Projects</a></li>
+                            <ul id="project-list" class="dropdown-content blue-grey darken-2">
+                                <li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
+                                <li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
+                            </ul>
+                    </ul>
+                </div>
+            </nav>
+            <ul id="slide-out" class="sidenav blue-grey">
+                <li><a href="#profil" title="Profile" class="white-text">Profile</a></li>
+                <li><a href="#parcours" title="Experience" class="white-text">Experience</a></li>
+                <li><a href="#skills" title="Skills" class="white-text">Skills</a></li>
+                <li>
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header"><span class="white-text">Projects</span></div>
+                            <div class="collapsible-body">
+                                <ul class="blue-grey darken-2">
                                     <li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
                                     <li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
                                 </ul>
-                        </ul>
-                    </div>
-                </nav>
-                <ul id="slide-out" class="sidenav blue-grey">
-                    <li><a href="#profil" title="Profile" class="white-text">Profile</a></li>
-                    <li><a href="#parcours" title="Experience" class="white-text">Experience</a></li>
-                    <li><a href="#skills" title="Skills" class="white-text">Skills</a></li>
-                    <li><a class="dropdown-trigger" data-target="side-project-list" title="Projects">Projects</a></li>
-                        <ul id="side-project-list" class="dropdown-content blue-grey darken-2">
-                            <li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
-                            <li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
-                        </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>        
             </ul>
         </header>
 

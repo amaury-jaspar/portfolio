@@ -8,10 +8,12 @@ $(document).ready(function(){
     // Dropdown menus
     $('.modal').modal();
     $('.dropdown-trigger').dropdown({
-        /*hover: true,*/
         coverTrigger: false,
         constrainWidth: false
     });
+
+    // Collapsible menu
+    $('.collapsible').collapsible();
 
     // Sticky top navigation bar
     $(window).scroll(function() {
