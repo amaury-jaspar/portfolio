@@ -6,63 +6,12 @@ p,h1,span,td,th {
     opacity: 0.9;
 }
 
-header div > h1 {
-    /* width:30%; */
-    margin-left:10%;
-}
-
-#top-info-list {
-    /* width:70%; */
-    margin-left  : 40%;
-}
-
-/* #links > .col {
-    height:100%;
-}
-
-#links > .col > .card {
-    height: 100%;
-} */
-
-#profile {
-    height:160px;
-    margin-bottom:0px;
-}
-
-header > div:first-child > div {
-    height: inherit;
-}
-
-#profile-picture {
-    padding:2px;
-    width:25%;
-    height:auto;
-    margin-left:auto;
-}
-
-#profile-info-left {
-    margin-left : auto;
-}
-
-header .material-icons {
-    color: white;
-}
-
-/* #name {
-    font-size:100%;
-   padding-left: 12%;
-} */
-
 .fab, .fas, .material-icons {
     color:#62757f;
 }
 
 #language-select {
     margin-right : 3%;
-}
-
-#profile .card {
-    font-size : 90%;
 }
 
 .card-image {
@@ -72,7 +21,6 @@ header .material-icons {
 .desc-title {
     display: inline-block;
     width : 140px;
-    /* color:#c1d5e0; */
    font-weight:bold;
 }
 
@@ -106,23 +54,9 @@ h3 {
     font-size: 20px;
 }
 
-/* figure {
-    width:60%;
-} */
-
 svg {
     width:100%;
     height: 50%;
-}
-
-
-/* rect.percent {
-    fill : #62757f;
-} */
-
-
-.chart[data-percent=60] {
-    stroke-dashoffset:60%; 
 }
 
 .collection li {
@@ -134,7 +68,6 @@ svg {
 }
 
 .collection figure {
-    /* margin-top : 3%; */
     margin-right:0;
     height:20px;
     padding-left:0;

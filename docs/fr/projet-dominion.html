@@ -46,7 +46,7 @@
 			<div class="nav-wrapper container ">
                 <a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-                <div class="col s12">
+                <div class="col s12 hide-on-small-only">
                     <a href="./index.html"><i class="material-icons left">home</i></a>
                     <a href="#!" class="breadcrumb left">Projet Dominion</a>
                 </div>
@@ -55,7 +55,7 @@
                         <li><a href="#profil" title="Profil">Profil</a></li>
                         <li><a href="#experience" title="Parcours">Parcours</a></li>
                         <li><a href="#skills" title="Compétences">Compétences</a></li>
-                        <li><a class="dropdown-trigger" data-target="project-list" title="Projets">Projets</a></li>
+                        <li><a href="#projets" title="Projects" class="white-text dropdown-trigger" data-target="side-project-list">Projects</a></li>
                             <ul id="project-list" class="dropdown-content blue-grey darken-2">
                                 <li><a class="white-text" href="../../docs/fr/projet-dominion.html">Projet Dominion</a></li>
                             </ul>
@@ -64,12 +64,15 @@
 			</div>
 		</nav>
 		<ul id="slide-out" class="sidenav blue-grey">
-				<li><a href="#profil" title="Profil" class="white-text">Profil</a></li>
-				<li><a href="#parcours" title="Parcours" class="white-text">Parcours</a></li>
-				<li><a href="#skills" title="Compétences" class="white-text">Compétences</a></li>
-				<li><a href="#projets" title="Projets" class="white-text">Projets</a></li>
-				<!-- <li><a href="#contact" title="Contact" class="white-text">Contact</a></li> -->
-		</ul>
+            <li><a href="#profil" title="Profile" class="white-text">Profile</a></li>
+            <li><a href="#parcours" title="Experience" class="white-text">Experience</a></li>
+            <li><a href="#skills" title="Skills" class="white-text">Skills</a></li>
+            <li><a class="dropdown-trigger" data-target="side-project-list" title="Projects">Projects</a></li>
+                <ul id="side-project-list" class="dropdown-content blue-grey darken-2">
+                    <li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
+                    <li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
+                </ul>
+            </ul>
 	</header>
 
     <main>

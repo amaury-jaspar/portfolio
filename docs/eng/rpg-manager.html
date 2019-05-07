@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="../../css/header.css">
     <link rel="stylesheet" type="text/css" href="../../css/projet-dominion.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -32,21 +33,20 @@
 	<header class="header">
 
 		<nav class="blue-grey darken-2">
-                <div class="right">
-                        <div>
-                                <a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
-                        </div>
-                        <ul id="language-list" class="dropdown-content blue-grey darken-2"">
-                            <li><a class="white-text" href="./docs/eng/index.html">English</a></li>
-                            <li><a class="white-text" href="index.html">French</a></li>
-                        </ul>
-                    </div>
-			
+            <div class="right">
+                <div>
+                        <a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
+                </div>
+                <ul id="language-list" class="dropdown-content blue-grey darken-2"">
+                    <li><a class="white-text" href="./docs/eng/index.html">English</a></li>
+                    <li><a class="white-text" href="index.html">French</a></li>
+                </ul>
+            </div>
 
 			<div class="nav-wrapper container ">
                 <a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-                <div class="col s12">
+                <div class="col s12 hide-on-small-only">
                     <a href="../../index.html"><i class="material-icons left">home</i></a>
                     <a href="#!" class="breadcrumb left">RPG Manager</a>
                 </div>
@@ -60,31 +60,39 @@
                                 <li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
                                 <li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
                             </ul>
-                        <!-- <li><a href="#contact" title="Contact">Contact</a></li> -->
                     </ul>
                 </div>
             </nav>
+
             <ul id="slide-out" class="sidenav blue-grey">
-                    <li><a href="#profil" title="Profile" class="white-text">Profile</a></li>
-                    <li><a href="#parcours" title="Experience" class="white-text">Experience</a></li>
-                    <li><a href="#skills" title="Skills" class="white-text">Skills</a></li>
-                    <li><a href="#projets" title="Projects" class="white-text">Projects</a></li>
-                    <!-- <li><a href="#contact" title="Contact" class="white-text">Contact</a></li> -->
+                <li class="user-view valign-wrapper">
+                    <span class="white-text">Amaury JASPAR</span>
+                    <span><a href="./index.html"><i class="material-icons right">home</i></a></span>
+                </li>
+                <li><div class="divider"></div></li>
+                <li><a href="#profile-section" title=Profile" class="white-text">Profile</a></li>
+                <li><a href="#skills" title="Skills" class="white-text">Skills</a></li>
+                <li><a href="#experience" title="Experience" class="white-text">Experience</a></li>
+                <li><a href="#projets" title="Projects" class="white-text dropdown-trigger" data-target="side-project-list">Projects</a></li>
+                    <ul id="side-project-list" class="dropdown-content blue-grey darken-2">
+                        <li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
+                        <li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
+                    </ul>
             </ul>
         </header>
 
     <main>
         <div id="projects" class="container">
-                <h1 id="rpg-manager">RPG Manager</h1>
-                <h2 id="what-is-it-">What is it ?</h2>
+                <h1 id="first-header">RPG Manager</h1>
+                <h2>What is it ?</h2>
                 <p>RPG Manager is a tool to help you manage your table RPG games. There are Game Master (GM) and player specific interfaces.</p>
                 <p>This software is currently being built to be used with the <a href="https://naheulbeuk.com/">Naheulbeuk</a> RPG (A french rpg project), but it will also work with other types of games such as D&amp;D. Because the software is open-source, you can add any features you might want for your specific game.</p>
                 <p>RPG Manager is written in <a href="https://www.oracle.com/technetwork/java/javase/documentation/index.html">JAVA</a> and uses the <a href="https://www.gtk.org/">GTK</a> framework for the interface.</p>
-                <h2 id="functionalities">Functionalities</h2>
-                <h3 id="exporting-your-games-and-characters">Exporting your games and characters</h3>
+                <h2>Functionalities</h2>
+                <h3>Exporting your games and characters</h3>
                 <p>RPG Manager allows you to export your games and characters to XML files which can then be imported into RPG Manager to transfer games information or transfer characters between games.</p>
                 <p>The XML files contain all the important information related to your game or character such as name, inventory, abilities, players...</p>
-                <h2 id="status">Status</h2>
+                <h2>Status</h2>
                 <p>The software is in a <strong>VERY EARLY</strong> stage. Most of the structure is figured out and the export to XML is working but there is still a lot of work to do, especially when it comes to the UI.</p>
                 <p>There is no public repository as of yet. I am still waiting to have a <del>working</del> not completely unusable version. This could take a long time...</p>                   
         </div>
@@ -92,87 +100,42 @@
     </main>
     
     <footer class="page-footer blue-grey darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8">
+                    <ul>
+                        <li>
+                            <span class="desc-title">Personal email</span>
+                            <span class="desc-content">a.jaspar@protonmail.com</span>
+                        </li>
+                        <li>
+                            <span class="desc-title">Student email</span>
+                            <span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row col s12 m4 hide-on-small-only">
+                    <ul>
+                        <li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a></li>
+                        <li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-gitlab fa-3x"></i></a></li>
+                        <li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-linkedin fa-3x"></i></a></li>		
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
             <div class="container">
-                <div class="row">
-                    <div class="col s12 m6">
-                        <ul>
-                            <li>
-                                <span class="desc-title">Personal email</span>
-                                <span class="desc-content">a.jaspar@protonmail.com</span>
-                            </li>
-                            <li>
-                                <span class="desc-title">Student email</span>
-                                <span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row col s12 m6">
-                        <ul>
-                            <li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a></li>
-                            <li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-gitlab fa-3x"></i></a></li>
-                            <li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-linkedin fa-3x"></i></a></li>		
-                        </ul>
-                    </div>
-                </div>
+                @ 2019 Copyright - Amaury JASPAR
             </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    @ 2019 Copyright - Amaury JASPAR
-                </div>
-            </div>
+        </div>
     </footer>
-			
-		
-
-    
-
-		
 
 		<!-- Compiled and minified JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-		<!-- Sidenav pop-up -->
-
-		<script>
-				$(document).ready(function(){
-					$('.sidenav').sidenav();
-				});
-		</script>
-
-		<!-- Dropdown menus -->
-
-		<script>
-                $(document).ready(function() {
-                    $('.modal').modal();
-                    $('.dropdown-trigger').dropdown({
-                        hover: true,
-                        coverTrigger: false,
-                        constrainWidth: false
-                    });
-                });
-        </script>
-
-		<!-- Sticky navbar script -->
-
-		<script>
-			$(document).ready(function() {
-				$(window).scroll(function() {
-					if ($('#profile').is(":visible")) {
-						if ($(window).scrollTop()>160) {
-							$('nav').addClass('sticky-nav');
-							$('#first-header').addClass('spaced-title');
-						} else {
-							$('nav').removeClass('sticky-nav');
-							$('#first-header').removeClass('spaced-title');
-						}
-					} else {
-						$('nav').addClass('sticky-nav');
-						$('#first-header').addClass('spaced-title');
-					}
-				});
-			});
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <!-- Local JavaScript -->
+        <script src ="../../js/script.js"></script>
         
 	</body>
 </html>

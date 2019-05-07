@@ -22,10 +22,13 @@
      
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+		<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	</head>
+</head>
 
 <body class="grey lighten-4">
 	<header class="header">
@@ -33,10 +36,6 @@
 		<div id="profile" class="row hide-on-med-and-down valign-wrapper blue-grey lighten-2">
 			<div class="col s4 valign-wrapper">
 					<img id="profile-picture" alt="profile picutre" class="responsive-img" src="./ressources/img/profile-picture-with-background.png">
-					<!-- <div id="profile-info-left" class="right center-align">
-							<p  id="name">Amaury JASPAR</p>
-							<span>CS student at IUT Montpellier - Sète</span>
-						</div> -->
 			</div>
 			<div class="col s8">
 				<ul id="top-info-list">
@@ -67,7 +66,6 @@
 					<li><a class="white-text" href="./docs/fr/index.html">French</a></li>
 				</ul>
 			</div>
-			
 
 			<div class="nav-wrapper container ">
 				<a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -82,10 +80,10 @@
 							<li><a class="white-text" href="./docs/eng/projet-dominion.html">Dominion project</a></li>
 							<li><a class="white-text" href="./docs/eng/rpg-manager.html">RPG Manager</a></li>
 						</ul>
-					<!-- <li><a href="#contact" title="Contact">Contact</a></li> -->
 				</ul>
 			</div>
 		</nav>
+
 		<ul id="slide-out" class="sidenav blue-grey">
 			<li class="user-view valign-wrapper">
 				<span class="white-text">Amaury JASPAR</span>
@@ -98,29 +96,16 @@
 			<li><a href="#projets" title="Projects" class="white-text dropdown-trigger" data-target="side-project-list">Projects</a></li>
 				<ul id="side-project-list" class="dropdown-content blue-grey darken-2">
 					<li><a class="white-text" href="./docs/eng/projet-dominion.html">Dominion project</a></li>
+					<li><a class="white-text" href="./docs/eng/rpg-manager.html">RPG Manager</a></li>
 				</ul>
-			<!-- <li><a href="#contact" title="Contact" class="white-text">Contact</a></li> -->
 		</ul>
+
 	</header>
-
-
 
 	<main>
 		<div id="profile-section" class="container section scrollspy">
 			<h1 id="first-header">Profile</h1>
-			<!-- <div class="row">
-				<div class="card col s12">
-					<div class="card-image">
-						<img>
-					</div>
-					<div class="card-content">
-						<span class="card-title left">Amaury JASPAR</span>
-						<p class="center">Étudiant à l'IUT informatique de Montpellier</p>
-					</div>
-				</div>
-			</div> -->
 			<div id="links" class="row center ">
-				<!-- <div class="col s12 m7"> -->
 					<div class="col s12 m4">
 						<div class="card">
 							<div class="card-image">
@@ -132,8 +117,6 @@
 							</div>
 						</div>
 					</div>
-				<!-- </div> -->
-				<!-- <div class="col s12 m7"> -->
 					<div class="col s12 m4">
 						<div class="card">
 							<div class="card-image">
@@ -156,65 +139,59 @@
 							</div>
 						</div>
 					</div>
-				<!-- </div> -->
 			</div>
 		</div>
+
 		<div id="skills" class="container section scrollspy">
 			<h1>Skills</h1>
-			<!-- <div class="row"> 
-					<div class="card col s12"> -->
-						<!-- <div> -->
-								<ul class="collection z-depth-1">
-									<li class="collection-item row valign-wrapper">
-										<div class="col s4 center-align">
-											<i class="fab fa-java fa-3x"></i>
-											<p class="hide-on-small-only">Java</p>
-										</div>
-										<div class="progress grey lighten-2">
-											<div class="determinate red lighten-1" style="width: 60%"></div>
-										</div>	
-									</li>
-									<li class="collection-item row valign-wrapper">
-										<div class="col s4 center-align">
-											<i class="fas fa-code fa-3x"></i>
-											<p id="c-logo" >Langage C</p>
-										</div>
-										<div class="progress grey lighten-2">
-											<div class="determinate amber accent-2" style="width: 30%"></div>
-										</div>	
-									</li>
-									<li class="collection-item row valign-wrapper">
-										<div class="col s4 center-align">
-											<i class="fab fa-html5 fa-3x ">/</i>
-											<i class="fab fa-css3-alt fa-3x"></i>
-											<p>HTML / CSS</p>
-										</div>	
-										<div class="progress grey lighten-2">
-											<div class="determinate" style="width: 70%"></div>
-										</div>	
-									</li>
-									<li class="collection-item row valign-wrapper">
-										<div class="col s4 center-align">
-											<i class="fas fa-database fa-3x "></i>
-											<p>SQL / PLSQL</p>
-										</div>
-										<div class="progress grey lighten-2">
-											<div class="determinate green lighten-1" style="width: 50%"></div>
-										</div>		
-									</li>
-									<li class="collection-item row valign-wrapper">
-											<div class="col s4 center-align">
-												<i class="fas fa-paint-brush fa-3x "></i>
-												<p>GIMP drawing</p>
-											</div>
-											<div class="progress grey lighten-2">
-												<div class="determinate purple lighten-1" style="width: 1%"></div>
-											</div>		
-										</li>
-								</ul>
-						<!-- </div> -->
-					<!-- </div>
-			</div> -->
+				<ul class="collection z-depth-1">
+					<li class="collection-item row valign-wrapper">
+						<div class="col s4 center-align">
+							<i class="fab fa-java fa-3x"></i>
+							<p class="hide-on-small-only">Java</p>
+						</div>
+						<div class="progress grey lighten-2">
+							<div class="determinate red lighten-1" style="width: 60%"></div>
+						</div>	
+					</li>
+					<li class="collection-item row valign-wrapper">
+						<div class="col s4 center-align">
+							<i class="fas fa-code fa-3x"></i>
+							<p id="c-logo" >Langage C</p>
+						</div>
+						<div class="progress grey lighten-2">
+							<div class="determinate amber accent-2" style="width: 30%"></div>
+						</div>	
+					</li>
+					<li class="collection-item row valign-wrapper">
+						<div class="col s4 center-align">
+							<i class="fab fa-html5 fa-3x ">/</i>
+							<i class="fab fa-css3-alt fa-3x"></i>
+							<p>HTML / CSS</p>
+						</div>	
+						<div class="progress grey lighten-2">
+							<div class="determinate" style="width: 70%"></div>
+						</div>	
+					</li>
+					<li class="collection-item row valign-wrapper">
+						<div class="col s4 center-align">
+							<i class="fas fa-database fa-3x "></i>
+							<p>SQL / PLSQL</p>
+						</div>
+						<div class="progress grey lighten-2">
+							<div class="determinate green lighten-1" style="width: 50%"></div>
+						</div>		
+					</li>
+					<li class="collection-item row valign-wrapper">
+						<div class="col s4 center-align">
+							<i class="fas fa-paint-brush fa-3x "></i>
+							<p>GIMP drawing</p>
+						</div>
+						<div class="progress grey lighten-2">
+							<div class="determinate purple lighten-1" style="width: 1%"></div>
+						</div>		
+					</li>
+				</ul>
 		</div>
 
 		<div id="experience" class="container section scrollspy">
@@ -294,9 +271,6 @@
 
 	</main>
 
-			
-		
-
 		<footer class="page-footer blue-grey darken-2">
 			<div class="container">
 				<div class="row">
@@ -334,48 +308,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-		<!-- Sidenav pop-up -->
-
-		<script>
-				$(document).ready(function(){
-					$('.sidenav').sidenav();
-					$('.scrollspy').scrollSpy();
-				});
-		</script>
-
-		<!-- Dropdown  menus-->
-
-		<script>
-			$(document).ready(function() {
-				$('.modal').modal();
-				$('.dropdown-trigger').dropdown({
-					hover: true,
-					coverTrigger: false,
-					constrainWidth: false
-				});
-			});
-		</script>
-
-		<!-- Sticky navbar script -->
-
-		<script>
-			$(document).ready(function() {
-				$(window).scroll(function() {
-					if ($('#profile').is(":visible")) {
-						if ($(window).scrollTop()>160) {
-							$('nav').addClass('sticky-nav');
-							$('#first-header').addClass('spaced-title');
-						} else {
-							$('nav').removeClass('sticky-nav');
-							$('#first-header').removeClass('spaced-title');
-						}
-					} else {
-						$('nav').addClass('sticky-nav');
-						$('#first-header').addClass('spaced-title');
-					}
-				});
-			});
-		</script>
+		<!-- Local JavaScript -->
+		<script src ="./js/script.js"></script>
 
 	</body>
 </html>

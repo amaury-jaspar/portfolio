@@ -1,0 +1,31 @@
+header div > h1 {
+    margin-left:10%;
+}
+
+#top-info-list {
+    margin-left  : 40%;
+}
+
+#profile {
+    height:160px;
+    margin-bottom:0px;
+}
+
+header > div:first-child > div {
+    height: inherit;
+}
+
+#profile-picture {
+    padding:2px;
+    width:25%;
+    height:auto;
+    margin-left:auto;
+}
+
+#profile-info-left {
+    margin-left : auto;
+}
+
+header .material-icons {
+    color: white;
+}
