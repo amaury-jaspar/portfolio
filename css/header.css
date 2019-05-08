@@ -15,8 +15,10 @@ header div > h1 {
     margin-bottom:0px;
 }
 
-header > div:first-child > div {
+header .row .col.s4 {
     height: inherit;
+    padding-right:10%;
+    width:40%;
 }
 
 #profile-picture {
