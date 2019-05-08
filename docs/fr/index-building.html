@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="eng">
 
 <html>
 <head>
@@ -9,45 +9,54 @@
 
 	<title>Portfolio</title>
 	
-
 	<!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Social media Font -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	 <!-- Social media Font -->
 	<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
-	
-	  <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     
+	<!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-	<link rel="stylesheet" type="text/css" href="../../css/styles.css">
+	<!-- CSS -->
+
+		<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+
+	<!-- JavaScript -->
+
+		<!-- Compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+			<!-- Local JavaScript -->
+	<script src ="./js/script.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	</head>
+</head>
 
 <body class="grey lighten-4">
 	<header class="header">
 
 		<div id="profile" class="row hide-on-med-and-down valign-wrapper blue-grey lighten-2">
-			<div class="col s4 center-align">
-					<img id="profile-picture" class="responsive-img " src="../../ressources/img/brand-logo.png">
-					<p  id="name">Amaury JASPAR</p>
+			<div class="col s4 valign-wrapper">
+					<img id="profile-picture" alt="profile picutre" class="responsive-img" src="./ressources/img/profile-picture-with-background.png">
 			</div>
 			<div class="col s8">
 				<ul id="top-info-list">
-					<p>Étudiant à l'IUT Informatique de Montpellier - Sète</p>
+					<p>CS student at IUT Montpellier - Sète</p>
 					<li>
 						<span class="desc-title">Age</span>
 						<span class="desc-content">20</span>
 					</li>
 					<li>
-						<span class="desc-title">Email personnel</span>
+						<span class="desc-title">Personal email</span>
 						<span class="desc-content">a.jaspar@protonmail.com</span>
 					</li>
 					<li>
-							<span class="desc-title">Email universitaire</span>
+							<span class="desc-title">Student email</span>
 							<span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
 						</li>
 				</ul>
@@ -55,121 +64,162 @@
 		</div>
 
 		<nav class="blue-grey darken-2">
-			<div class="right">
-				<div>
+			<div class="nav-wrapper">
+				<div class="right">
+					<div>
 						<a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
+					</div>
+					<ul id="language-list" class="dropdown-content blue-grey darken-2"">
+						<li><a class="white-text" href="./index.html">English</a></li>
+						<li><a class="white-text" href="./docs/fr/index.html">French</a></li>
+					</ul>
 				</div>
-				<ul id="language-list" class="dropdown-content blue-grey darken-2"">
-					<li><a class="white-text" href="../../index.html">English</a></li>
-					<li><a class="white-text" href="./index.html">Français</a></li>
-				</ul>
-			</div>
-			
+				<div class="container">
+					<a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<a href="./index.html"><i class="material-icons left hide-on-med-and-down">home</i></a>
 
-			<div class="nav-wrapper container ">
-				<a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-				<a href="./index.html"><i class="material-icons left hide-on-med-and-down">home</i></a>
-				
-				<ul id="nav-top" class="right hide-on-med-and-down">
-					<li><a href="#profil" title="Profil">Profil</a></li>
-					<li><a href="#experience" title="Parcours">Parcours</a></li>
-					<li><a href="#skills" title="Compétences">Compétences</a></li>
-					<li><a class="dropdown-trigger" data-target="project-list" title="Projets">Projets</a></li>
-						<ul id="project-list" class="dropdown-content blue-grey darken-2">
-							<li><a class="white-text" href="./projet-dominion.html">Projet Dominion</a></li>
-							<li><a class="white-text" href="../eng/rpg-manager.html">RPG Manager</a></li>
-						</ul>
-					<!-- <li><a href="#contact" title="Contact">Contact</a></li> -->
-				</ul>
+					<ul id="nav-top" class="right hide-on-med-and-down">
+						<li><a href="#profile-section" title="Profile">Profile</a></li>
+						<li><a href="#projects" title="Projects">Projects</a></li>
+							<!-- <ul id="project-list" class="dropdown-content blue-grey darken-2">
+								<li><a class="white-text" href="./docs/eng/projet-dominion.html">Dominion project</a></li>
+								<li><a class="white-text" href="./docs/eng/rpg-manager.html">RPG Manager</a></li>
+							</ul> -->
+						<li><a href="#skills" title="Skills">Skills</a></li>
+						<li><a href="#experience" title="Experience">Experience</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
+
 		<ul id="slide-out" class="sidenav blue-grey">
-			<li><a href="#profil" title="Profile" class="white-text">Profile</a></li>
-			<li><a href="#parcours" title="Experience" class="white-text">Experience</a></li>
+			<li class="user-view row">
+				<div class="white-text col s10">Amaury JASPAR</div>
+				<div class="valign-wrapper col s2"><a href="./index.html"><i class="material-icons right">home</i></a></div>
+			</li>
+			<li><div class="divider"></div></li>
+			<li><a href="#profile-section" title=Profile" class="white-text">Profile</a></li>
+			<li><a href="#projects" title=Projects" class="white-text">Projects</a></li>
 			<li><a href="#skills" title="Skills" class="white-text">Skills</a></li>
-			<li><a href="#projets" title="Projects" class="white-text dropdown-trigger" data-target="side-project-list">Projects</a></li>
-					<ul id="side-project-list" class="dropdown-content blue-grey darken-2">
-							<li><a class="white-text" href="./projet-dominion.html">Dominion project</a></li>
-							<li><a class="white-text" href="./rpg-manager.html">RPG Manager</a></li>
-					</ul>
-		</ul>	
+			<li><a href="#experience" title="Experience" class="white-text">Experience</a></li>
+			<!-- <li>
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><span class="white-text">Projects</span></div>
+                        <div class="collapsible-body">
+                         	<ul class="blue-grey darken-2">
+                                <li><a class="white-text" href="./docs/eng/projet-dominion.html">Dominion project</a></li>
+                                <li><a class="white-text" href="./docs/eng/rpg-manager.html">RPG Manager</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li> -->
+		</ul>
+
 	</header>
 
-
-
 	<main>
-		<div class="container">
-			<h1 id="first-header">Profil</h1>
-			<!-- <div class="row">
-				<div class="card col s12">
-					<div class="card-image">
-						<img>
-					</div>
-					<div class="card-content">
-						<span class="card-title left">Amaury JASPAR</span>
-						<p class="center">Étudiant à l'IUT informatique de Montpellier</p>
+		<div id="profile-section" class="container section scrollspy">
+			<h1 id="first-header">Profile</h1>
+			<div id="links" class="row center ">
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+								<a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title center">My Github</span>
+							<p class="center">Professional and study related projects</p>
+						</div>
 					</div>
 				</div>
-			</div> -->
-			<div id="links" class="row center ">
-				<!-- <div class="col s12 m7"> -->
-					<div class="col s12 m4">
-						<div class="card">
-							<div class="card-image">
-									<a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a>
-							</div>
-							<div class="card-content">
-								<span class="card-title center">Mon Github</span>
-								<p class="center">Projets professionnels et scolaires</p>
-							</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<a href="https://gitlab.com/AmauryJ"><i class="fab fa-gitlab fa-3x"></i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title halign">My Gitlab</span>
+							<p>Personal projects</p>
 						</div>
 					</div>
-				<!-- </div> -->
-				<!-- <div class="col s12 m7"> -->
-					<div class="col s12 m4">
-						<div class="card">
-							<div class="card-image">
-								<a href="https://gitlab.com/AmauryJ"><i class="fab fa-gitlab fa-3x"></i></a>
-							</div>
-							<div class="card-content">
-								<span class="card-title halign">Mon Gitlab</span>
-								<p>Projets personnels</p>
-							</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image center">
+							<a href="https://www.linkedin.com/in/amaury-jaspar-3b0705170/"><i class="fab fa-linkedin fa-3x"></i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title">Linkedin</span>
+							<p>Experience and career</p>
 						</div>
 					</div>
-					<div class="col s12 m4">
-						<div class="card">
-							<div class="card-image center">
-								<a href="https://www.linkedin.com/in/amaury-jaspar-3b0705170/"><i class="fab fa-linkedin fa-3x"></i></a>
-							</div>
-							<div class="card-content">
-								<span class="card-title">Linkedin</span>
-								<p>Parcours et expériences</p>
-							</div>
-						</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="container section scrollspy">
+				<h1>Projects</h1>
+				<div class="card">
+					<div class="card-content">
+						<p>These are the projects I am currently working on, or that I have worked on.</p>
+						<p>A more detailled description of each project is available on the project's dedicated page</p>
 					</div>
-				<!-- </div> -->
+					<div class="card-tabs">
+						<ul class="tabs tabs-fixed-width">
+							<li class="tab"><a href="#dominion">Dominion</a></li>
+							<li class="tab"><a href="#rpg">RPG Manager</a></li>
+						</ul>
+					</div>
+					<div class="card-content">
+					<div  id="dominion">
+						<p>
+							This is a mandatory project, given by the teachers at IUT Montpellier. We are asked to develop part of a program
+							which aims to recreate the dominion card game in a command line and web interface.
+						</p>
+						<a href="./docs/eng/projet-dominion.html" class="btn"><i class="material-icons right">link</i>More information</a>
+					</div>
+					<div id="rpg">
+						<p>
+							Frustrated by the lack of decent simple software solutions to manage table rpg games, I decided to make my own.
+							This being my first software development project it's messy, ugly and would probably give a heart attack to anyone with a sense of what they're doing.
+							This is why the code is still private, I do not plan on releasing it until I can make it a bit less shameful. Once it is eventualy ready, it will be released under 
+							an open-source license (probably GPL).
+						</p>
+						<a href="./docs/eng/rpg-manager.html" class="btn"><i class="material-icons right">link</i>More information</a>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div id="skills" class="container section scrollspy">
-			<h1>Compétences</h1>
+			<h1>Skills</h1>
 				<ul class="collection z-depth-1">
 					<li class="collection-item row valign-wrapper">
 						<div class="col s4 center-align">
 							<i class="fab fa-java fa-3x"></i>
-							<p class="hide-on-small-only">Java</p>
+							<p>Java</p>
 						</div>
-						<div class="progress grey lighten-2">
-							<div class="determinate red lighten-1" style="width: 60%"></div>
+						<div class="progress grey lighten-2 col s8">
+							<div class="determinate red lighten-1" style="width: 70%"></div>
+						</div>	
+					</li>
+					<li class="collection-item row valign-wrapper">
+						<div class="col s4 center-align">
+							<i class="fab fa-python fa-3x"></i>
+							<p>Python</p>
+						</div>
+						<div class="progress grey lighten-2 col s8">
+							<div class="determinate brown lighten-1" style="width: 50%"></div>
 						</div>	
 					</li>
 					<li class="collection-item row valign-wrapper">
 						<div class="col s4 center-align">
 							<i class="fas fa-code fa-3x"></i>
-							<p id="c-logo" >Langage C</p>
+							<p id="c-logo" >C Language</p>
 						</div>
-						<div class="progress grey lighten-2">
+						<div class="progress grey lighten-2 col s8">
 							<div class="determinate amber accent-2" style="width: 30%"></div>
 						</div>	
 					</li>
@@ -179,8 +229,8 @@
 							<i class="fab fa-css3-alt fa-3x"></i>
 							<p>HTML / CSS</p>
 						</div>	
-						<div class="progress grey lighten-2">
-							<div class="determinate" style="width: 70%"></div>
+						<div class="progress grey lighten-2 col s8">
+							<div class="determinate" style="width: 60%"></div>
 						</div>	
 					</li>
 					<li class="collection-item row valign-wrapper">
@@ -188,33 +238,33 @@
 							<i class="fas fa-database fa-3x "></i>
 							<p>SQL / PLSQL</p>
 						</div>
-						<div class="progress grey lighten-2">
+						<div class="progress grey lighten-2 col s8">
 							<div class="determinate green lighten-1" style="width: 50%"></div>
 						</div>		
 					</li>
 					<li class="collection-item row valign-wrapper">
-							<div class="col s4 center-align">
-								<i class="fas fa-paint-brush fa-3x "></i>
-								<p>GIMP drawing</p>
-							</div>
-							<div class="progress grey lighten-2">
-								<div class="determinate purple lighten-1" style="width: 1%"></div>
-							</div>		
-						</li>
+						<div class="col s4 center-align">
+							<i class="fas fa-paint-brush fa-3x "></i>
+							<p>GIMP drawing</p>
+						</div>
+						<div class="progress grey lighten-2 col s8">
+							<div class="determinate purple lighten-1" style="width: 1%"></div>
+						</div>		
+					</li>
 				</ul>
 		</div>
 
-		<div id="experience" class="container">
-			<h1>Parcours</h1>
+		<div id="experience" class="container section scrollspy">
+			<h1>Experience</h1>
 			<div class="row">
 				<div class="col s12">
 					<div class="card">
 						<div class="card-content">
-							<span class="card-title">Baccalauréat Scientifique</span>
+							<span class="card-title">Scientific bachelor's degree</span>
 							<table>
 								<thead>
 									<tr>
-										<th>Lieu</th>
+										<th>Place</th>
 										<th>Date</th>
 									</tr>
 								</thead>
@@ -225,16 +275,8 @@
 									</tr>
 								</tbody>
 							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="center"><i class="material-icons">arrow_downward</i></div>
-			<div class="row">
-				<div class="col s12">
-					<div class="card">
-						<div class="card-content">
-							<span class="card-title">CPGE - PTSI</span>
+							<div class="center"><i class="material-icons">arrow_downward</i></div>
+							<span class="card-title">CPGE - PTSI (Preparatory class - Physics, Technology and Engineering)</span>
 								<table>
 									<thead>
 									<tr>
@@ -249,15 +291,7 @@
 									</tr>
 								</tbody>
 							</table>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="center"><i class="material-icons">arrow_downward</i></div>
-			<div class="row">
-				<div class="col s12">
-					<div class="card">
-						<div class="card-content">
+							<div class="center"><i class="material-icons">arrow_downward</i></div>
 							<span class="card-title">DUT Informatique</span>
 							<table>
 									<thead>
@@ -281,29 +315,26 @@
 
 	</main>
 
-			
-		
-
 		<footer class="page-footer blue-grey darken-2">
 			<div class="container">
 				<div class="row">
-					<div class="col s12 m6">
+					<div class="col s12 m8">
 						<ul>
 							<li>
 								<span class="desc-title">Email personnel</span>
 								<span class="desc-content">a.jaspar@protonmail.com</span>
 							</li>
 							<li>
-								<span class="desc-title">Email universitaire</span>
+								<span class="desc-title">Email étudiant</span>
 								<span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
 							</li>
 						</ul>
 					</div>
-					<div class="row col s12 m6">
+					<div class="row col s12 m4 hide-on-med-and-down">
 						<ul>
 							<li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a></li>
-							<li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-gitlab fa-3x"></i></a></li>
-							<li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-linkedin fa-3x"></i></a></li>		
+							<li class="col s4"><a href="https://gitlab.com/AmauryJ"><i class="fab fa-gitlab fa-3x"></i></a></li>
+							<li class="col s4"><a href="https://www.linkedin.com/in/amaury-jaspar-3b0705170/"><i class="fab fa-linkedin fa-3x"></i></a></li>		
 						</ul>
 					</div>
 				</div>
@@ -314,54 +345,6 @@
 				</div>
 			</div>
 		</footer>
-
-		
-
-		<!-- Compiled and minified JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-		<!-- Sidenav pop-up -->
-
-		<script>
-				$(document).ready(function(){
-					$('.sidenav').sidenav();
-				});
-		</script>
-
-		<!-- Dropdown  menus-->
-
-		<script>
-			$(document).ready(function() {
-				$('.modal').modal();
-				$('.dropdown-trigger').dropdown({
-					hover: true,
-					coverTrigger: false,
-					constrainWidth: false
-				});
-			});
-		</script>
-
-		<!-- Sticky navbar script -->
-
-		<script>
-			$(document).ready(function() {
-				$(window).scroll(function() {
-					if ($('#profile').is(":visible")) {
-						if ($(window).scrollTop()>160) {
-							$('nav').addClass('sticky-nav');
-							$('#first-header').addClass('spaced-title');
-						} else {
-							$('nav').removeClass('sticky-nav');
-							$('#first-header').removeClass('spaced-title');
-						}
-					} else {
-						$('nav').addClass('sticky-nav');
-						$('#first-header').addClass('spaced-title');
-					}
-				});
-			});
-		</script>
 
 	</body>
 </html>
