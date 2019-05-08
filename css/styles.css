@@ -79,3 +79,26 @@ svg {
         display: flex;
     } 
 }
+
+.tabs .tab a {
+    color: #455a64;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    color : rgba(69, 90, 100, 0.7);
+    background-color:transparent;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color : rgba(69, 90, 100, 0.2);
+}
+
+.tabs .indicator {
+    background-color : #455a64;
+    color : #455a64;
+}
+
+#projects .btn {
+    background-color:#90a4ae;
+    margin-top:3%;
+}

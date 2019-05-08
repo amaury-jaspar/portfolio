@@ -15,6 +15,9 @@ $(document).ready(function(){
     // Collapsible menu
     $('.collapsible').collapsible();
 
+    //Tabs
+    $('.tabs').tabs();
+
     // Sticky top navigation bar
     $(window).scroll(function() {
         if ($('#profile').is(":visible")) {
