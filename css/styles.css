@@ -110,3 +110,7 @@ svg {
 td {
     width:80%;
 }
+
+.collapsible-body {
+    background-color : white;
+}
