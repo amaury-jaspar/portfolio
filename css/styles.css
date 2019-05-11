@@ -80,6 +80,20 @@ svg {
     } 
 }
 
+@media(min-width:992px) {
+    #interests .card {
+        height:100%;
+    }
+
+    .card .card-content {
+        padding:5px;
+    }
+
+    #interests-cards {
+        display:flex; 
+    }
+}
+
 .tabs .tab a {
     color: #455a64;
 }
