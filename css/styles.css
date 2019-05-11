@@ -113,4 +113,11 @@ td {
 
 .collapsible-body {
     background-color : white;
+    padding:0;
 }
+
+#skills .collapsible-header i {
+    display:flex;
+    margin-left:auto;
+}
+
