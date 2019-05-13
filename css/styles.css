@@ -77,6 +77,10 @@ svg {
 
     /******* Experience *******/
 
+#experience > div.row > div {
+    padding:0;
+}
+
 .tabs .tab a {
     color: #455a64;
 }
