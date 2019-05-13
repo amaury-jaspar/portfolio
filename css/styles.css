@@ -1,41 +1,11 @@
+/************** Site wide **************/
+
 * {
     font-family: 'ubuntu','roboto','sans-serif';
 }
 
 p,h1,span,td,th,a {
     opacity: 0.9;
-}
-
-.fab, .fas, .material-icons {
-    color:#62757f;
-}
-
-#skills  .collection li div:first-child {
-    padding: 0;
-}
-
-.card-image {
-    padding-top: 5%;
-}
-
-.desc-title {
-    display: inline-block;
-    width : 140px;
-   font-weight:bold;
-}
-
-#top-info-list p {
-    font-size:120%;
-}
-
-.sticky-nav {
-    top:0;
-    position:fixed;
-    z-index:1;
-}
-
-.spaced-title {
-    margin-top: 7rem;
 }
 
 h1 {
@@ -49,6 +19,27 @@ h2 {
 h3 {
     font-size: 20px;
 }
+
+/************** Body **************/
+
+    /******* General *******/
+
+.fab, .fas, .material-icons {
+    color:#62757f;
+}    
+
+.spaced-title {
+    margin-top: 7rem;
+}
+
+    /*******  Projects *******/
+
+#projects .btn {
+    background-color:#90a4ae;
+    margin-top:3%;
+}
+
+    /******* Skills *******/
 
 svg {
     width:100%;
@@ -70,29 +61,21 @@ svg {
     padding-right:0;
 }
 
-#profile-section .card {
-    height: 100%;
+#skills  .collection li div:first-child {
+    padding: 0;
 }
 
-@media(min-width: 600px) {
-    #links {
-        display: flex;
-    } 
+.collapsible-body {
+    background-color : white;
+    padding:0;
 }
 
-@media(min-width:992px) {
-    #interests .card {
-        height:100%;
-    }
-
-    .card .card-content {
-        padding:5px;
-    }
-
-    #interests-cards {
-        display:flex; 
-    }
+#skills .collapsible-header i {
+    display:flex;
+    margin-left:auto;
 }
+
+    /******* Experience *******/
 
 .tabs .tab a {
     color: #455a64;
@@ -112,11 +95,6 @@ svg {
     color : #455a64;
 }
 
-#projects .btn {
-    background-color:#90a4ae;
-    margin-top:3%;
-}
-
 #experience i.material-icons {
     margin:3%;
 }
@@ -125,13 +103,74 @@ td {
     width:80%;
 }
 
-.collapsible-body {
-    background-color : white;
-    padding:0;
+    /******* Cards *******/
+
+.card-image {
+    padding-top: 15px;
 }
 
-#skills .collapsible-header i {
-    display:flex;
-    margin-left:auto;
+@media(min-width:992px) {
+    #interests .card {
+        height:100%;
+    }
+
+    #interests .card .card-content {
+        padding:15px;
+    }
+
+    #interests .cards {
+        display:flex; 
+    }
 }
+
+@media(min-width: 600px) {
+    #links {
+        display: flex;
+    } 
+}
+
+#profile-section .card {
+    height: 100%;
+}
+
+/************** Footer**************/
+
+@media(max-width:500px) {
+    .desc-title{
+        width: 110px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

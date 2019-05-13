@@ -2,12 +2,18 @@ header div > h1 {
     margin-left:10%;
 }
 
-/* nav div:first-child {
-    margin-right:5%;
-} */
-
 #top-info-list {
     margin-left  : 40%;
+}
+
+#top-info-list p {
+    font-size:120%;
+}
+
+.desc-title {
+    display: inline-block;
+    width : 140px;
+   font-weight:bold;
 }
 
 #profile {
@@ -51,4 +57,10 @@ header .material-icons {
 
 #slide-out li:first-child div:nth-child(2) {
     margin-top:3%;
+}
+
+.sticky-nav {
+    top:0;
+    position:fixed;
+    z-index:1;
 }
