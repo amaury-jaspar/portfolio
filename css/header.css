@@ -55,12 +55,16 @@ header .material-icons {
     margin-right:5%;
 }
 
-#slide-out li:first-child div:nth-child(2) {
-    margin-top:3%;
-}
-
 .sticky-nav {
     top:0;
     position:fixed;
     z-index:1;
+}
+
+#slide-out li:first-child {
+    display: flex;
+}
+
+#slide-out li div:nth-child(2) {
+    margin-left:auto;
 }
