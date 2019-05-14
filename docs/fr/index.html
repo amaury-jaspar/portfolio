@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="eng">
-
+<html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
+
+	<link rel="icon" href="ressources/img/profile-picture-with-background.png">
 
 	<title>Portfolio</title>
 	
@@ -36,7 +37,411 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
-    <body class="grey lighten-4">
-        <p class="center">Under construction</p>
+<body class="grey lighten-4">
+	<header class="header">
+
+		<div id="profile" class="row hide-on-med-and-down valign-wrapper blue-grey lighten-2">
+			<div class="col s4 valign-wrapper">
+					<img id="profile-picture" alt="profile picture" class="responsive-img" src="./ressources/img/profile-picture-with-background.png">
+			</div>
+			<div class="col s8">
+				<ul id="top-info-list">
+					<li><span>Étudiant en Informatique à  l'IUT Montpellier - Sète</span></li>
+					<li>
+						<span class="desc-title">Age</span>
+						<span class="desc-content">20</span>
+					</li>
+					<li>
+						<span class="desc-title">Email personnel</span>
+						<span class="desc-content">a.jaspar@protonmail.com</span>
+					</li>
+					<li>
+							<span class="desc-title">Email universitaire</span>
+							<span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
+						</li>
+				</ul>
+			</div>
+		</div>
+
+		<nav class="blue-grey darken-2">
+			<div class="nav-wrapper">
+				<div class="right">
+					<div>
+						<a class="dropdown-trigger" data-target="language-list"><i id="language-select" class="material-icons">language</i></a>
+					</div>
+					<ul id="language-list" class="dropdown-content blue-grey darken-2">
+						<li><a class="white-text" href="./index.html">English</a></li>
+						<li><a class="white-text" href="./docs/fr/index.html">French</a></li>
+					</ul>
+				</div>
+				<div class="container">
+					<a data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<a href="./docs/fr/index.html"><i class="material-icons left hide-on-med-and-down">home</i></a>
+
+					<ul id="nav-top" class="right hide-on-med-and-down">
+						<li><a href="#profile-section" title="Profile">Profil</a></li>
+						<li><a href="#projects" title="Projects">Projets</a></li>
+						<li><a href="#skills" title="Skills">Compétences</a></li>
+						<li><a href="#experience" title="Experience">Parcours</a></li>
+						<li><a href="#interests" title="Interests">Centres d'intérêt</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<ul id="slide-out" class="sidenav blue-grey">
+			<li class="user-view valign-wrapper">
+				<div class="white-text">Amaury JASPAR</div>
+				<div><a href="./docs/fr/index.html"><i class="material-icons">home</i></a></div>
+			</li>
+			<li><div class="divider"></div></li>
+			<li><a href="#profile-section" title="Profile" class="white-text">Profil</a></li>
+			<li><a href="#projects" title="Projects" class="white-text">Projets</a></li>
+			<li><a href="#skills" title="Skills" class="white-text">Compétences</a></li>
+			<li><a href="#experience" title="Experience" class="white-text">Parcours</a></li>
+			<li><a href="#interests" title="Interests" class="white-text">Centres d'intérêt</a></li>
+		</ul>
+
+	</header>
+
+	<main>
+		<div id="profile-section" class="container section scrollspy">
+			<h1 id="first-header">Profil</h1>
+			<div id="links" class="row center ">
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+								<a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title center">Mon Github</span>
+							<p class="center">Projets professionnels et scolaires</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image">
+							<a href="https://gitlab.com/AmauryJ"><i class="fab fa-gitlab fa-3x"></i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title halign">Mon Gitlab</span>
+							<p>Projets personnels</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m4">
+					<div class="card">
+						<div class="card-image center">
+							<a href="https://www.linkedin.com/in/amaury-jaspar-3b0705170/"><i class="fab fa-linkedin fa-3x"></i></a>
+						</div>
+						<div class="card-content">
+							<span class="card-title">Linkedin</span>
+							<p>Parcours et expérience</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="container section scrollspy">
+			<h1>Projets</h1>
+			<div class="card">
+				<div class="card-content">
+					<p>Cette section rassemble mes différents projets.</p>
+					<p>Une description plus détaillée est disponible sur la page dédiée de chaque projet.</p>
+				</div>
+				<div class="card-tabs">
+					<ul class="tabs tabs-fixed-width">
+						<li class="tab"><a href="#rpg">RPG Manager</a></li>
+						<li class="tab"><a href="#dominion">Dominion</a></li>
+					</ul>
+				</div>
+				<div class="card-content">
+					<div id="rpg">
+						<p>
+							Frustré par l'absence logiciels simples et complets permettant de gérer une partie de jeu de rôle sur table, j'ai décidé de créer le mien.
+							Le code en son état acutel étant plutôt "sale", il n'existe pas encore de repository publique. J'attend encore d'avoir une version relativement propre
+							et un minimum fonctionnelle. Une fois ce but accomplis, le code sera publié sur gitlab sous une licence open-source (probablement gpl).
+						</p>
+						<a href="./docs/en/rpg-manager.html" class="btn"><i class="material-icons right">link</i>More information</a>
+					</div>
+					<div  id="dominion">
+						<p>
+							Ce projet fait partie de la formation en DUT Informatique à l'IUT de Montpellier. Il nous est demandé de programmer le jeu de carte Dominion.
+						</p>
+						<a href="./docs/fr/projet-dominion.html" class="btn"><i class="material-icons right">link</i>More information</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="skills" class="container section scrollspy">
+			<h1>Compétences</h1>
+			<ul class="collapsible">
+				<li class="active">
+					<div class="collapsible-header">
+						<span>Développement</span>
+						<i class="material-icons">expand_more</i>
+					</div>
+					<div class="collapsible-body">
+						<ul class="collection">
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fab fa-java"></i>
+									<p>Java</p>
+								</div>
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate red lighten-1" style="width: 70%"></div>
+								</div>	
+							</li>
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fab fa-python"></i>
+									<p>Python</p>
+								</div>
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate brown lighten-1" style="width: 50%"></div>
+								</div>	
+							</li>
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fas fa-code"></i>
+									<p id="c-logo" >Langage C</p>
+								</div>
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate amber accent-2" style="width: 30%"></div>
+								</div>	
+							</li>
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fab fa-html5">/</i>
+									<i class="fab fa-css3-alt"></i>
+									<p>HTML / CSS</p>
+								</div>	
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate" style="width: 60%"></div>
+								</div>
+							</li>
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fas fa-database"></i>
+									<p>SQL / PLSQL</p>
+								</div>
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate green lighten-1" style="width: 50%"></div>
+								</div>		
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">
+						<span>Autres compétences informatiques</span>
+						<i class="material-icons">expand_more</i>
+					</div>
+					<div class="collapsible-body">
+						<ul class="collection">
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fas fa-paint-brush fa-3x "></i>
+									<p>GIMP drawing</p>
+								</div>
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate red lighten-1" style="width: 1%"></div>
+								</div>		
+							</li>
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fas fa-drafting-compass fa-3x"></i>
+									<p>Solidworks</p>
+								</div>
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate brown lighten-1" style="width: 40%"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="collapsible-header">
+						<span>Compétences générales</span>
+						<i class="material-icons">expand_more</i>
+					</div>
+					<div class="collapsible-body">
+						<ul class="collection">
+							<li class="collection-item row valign-wrapper">
+								<div class="col s2 center-align">
+									<i class="fas fa-language fa-3x "></i>
+									<p>English</p>
+								</div>
+								<div class="progress grey lighten-2 col s10">
+									<div class="determinate red lighten-1" style="width: 85%"></div>
+								</div>		
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div id="experience" class="container section scrollspy">
+			<h1>Parcours</h1>
+			<div class="row">
+				<div class="col s12">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Baccalauréat Scientifique</span>
+							<table>
+								<thead>
+									<tr>
+										<th>Lieu</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lycée Jospeh Vallot - Lodève, France</td>
+										<td>2014-2017</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="center"><i class="material-icons">arrow_downward</i></div>
+							<span class="card-title">CPGE - PTSI</span>
+							<table>
+								<thead>
+									<tr>
+										<th>Lieu</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lycée Mermoz - Montpellier, France</td>
+										<td>2017-2018</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="center"><i class="material-icons">arrow_downward</i></div>
+							<span class="card-title">DUT Informatique</span>
+							<table>
+								<thead>
+									<tr>
+										<th>Lieu</th>
+										<th>Date</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>DUT Informatique - IUT de Montpellier, France</td>
+										<td>2018-2020</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="interests" class="container section scrollspy row">
+				<h1>Centres d'intérêts</h1>
+				<div id="interests-cards">
+					<div class="col s6 m4 l2">
+							<div class="card center">
+								<div class="card-image">
+									<i class="fas fa-dice-d20 fa-3x"></i>
+								</div>
+								<div class="card-content">
+										<span>JDR sur table</span>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l2">
+							<div class="card center">
+								<div class="card-image">
+									<i class="fas fa-gamepad fa-3x"></i>
+								</div>
+								<div class="card-content">
+										<span>Jeux-vidéos</span>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l2">
+							<div class="card center">
+								<div class="card-image">
+									<i class="fab fa-osi fa-3x"></i>
+								</div>
+								<div class="card-content">
+									<span>OpenSource</span>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l2">
+							<div class="card center">
+								<div class="card-image">
+									<i class="fas fa-baseball-ball fa-3x"></i>
+								</div>
+								<div class="card-content">
+										<span>Tennis</span>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l2">
+							<div class="card center">
+								<div class="card-image">
+									<i class="fas fa-film fa-3x"></i>
+								</div>
+								<div class="card-content">
+									<span>Films</span>
+								</div>
+							</div>
+						</div>
+						<div class="col s6 m4 l2">
+							<div class="card center">
+								<div class="card-image">
+									<i class="fas fa-music fa-3x"></i>
+								</div>
+								<div class="card-content">
+									<span>Musique</span>
+								</div>
+							</div>
+						</div>
+				</div>
+		</div>
+
+	</main>
+
+		<footer class="page-footer blue-grey darken-2">
+			<div class="container">
+				<div class="row">
+					<div class="col s12 m8">
+						<ul>
+							<li>
+								<span class="desc-title">Email personnel</span>
+								<span class="desc-content">a.jaspar@protonmail.com</span>
+							</li>
+							<li>
+								<span class="desc-title">Email universitaire</span>
+								<span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
+							</li>
+						</ul>
+					</div>
+					<div class="row col s12 m4 hide-on-med-and-down">
+						<ul>
+							<li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a></li>
+							<li class="col s4"><a href="https://gitlab.com/AmauryJ"><i class="fab fa-gitlab fa-3x"></i></a></li>
+							<li class="col s4"><a href="https://www.linkedin.com/in/amaury-jaspar-3b0705170/"><i class="fab fa-linkedin fa-3x"></i></a></li>		
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					@ 2019 Copyright - Amaury JASPAR
+				</div>
+			</div>
+		</footer>
+
 	</body>
 </html>
