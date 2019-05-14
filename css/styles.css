@@ -75,6 +75,10 @@ svg {
     margin-left:auto;
 }
 
+.collection-item div:first-child {
+    margin-right:30px;
+}
+
     /******* Experience *******/
 
 #experience > div.row > div {

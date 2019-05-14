@@ -1,4 +1,32 @@
 $(document).ready(function(){
+
+    //Resizing of skills icons
+
+    /**
+     *  This function resizes the font aweome icons depending on the window's width
+     */
+    var iconResize = function() {
+        var list = $("#skills .fab, #skills .fas")
+        if ($(window).width() > 690) {
+            $(list).removeClass('fa-2x');
+            $(list).addClass('fa-3x');
+        } else {
+            if ($(window).width() < 500) {
+                $(list).removeClass('fa-2x');
+                $(list).addClass('fa-1x');
+            } else {
+                $(list).removeClass('fa-3x');
+                $(list).addClass('fa-2x');
+            }
+        }
+    }
+
+    iconResize();
+
+    $(window).resize(function() {
+        iconResize();
+    });
+
     // Sidenav
     $('.sidenav').sidenav();
 
@@ -33,4 +61,6 @@ $(document).ready(function(){
             $('#first-header').addClass('spaced-title');
         }
     });
+
+    
 });
