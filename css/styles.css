@@ -143,8 +143,8 @@ td {
 
 /************** Footer**************/
 
-footer span.desc-title{
-    width: 110px;
+footer span {
+    font-size:90%;
 }
 
 
