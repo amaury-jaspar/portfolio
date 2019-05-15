@@ -143,10 +143,8 @@ td {
 
 /************** Footer**************/
 
-@media(max-width:500px) {
-    .desc-title{
-        width: 110px;
-    }
+footer span.desc-title{
+    width: 110px;
 }
 
 
