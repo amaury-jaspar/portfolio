@@ -41,6 +41,11 @@ h3 {
     width:215px;
 }
 
+#projects .card-content .btn i {
+    margin-left: 0;
+    margin-right:15px;
+}
+
     /******* Skills *******/
 
 svg {
