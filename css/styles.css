@@ -35,8 +35,10 @@ h3 {
     /*******  Projects *******/
 
 #projects .btn {
+    display: flex;
     background-color:#90a4ae;
-    margin-top:3%;
+    margin: 20px auto 0 auto;
+    width:215px;
 }
 
     /******* Skills *******/
