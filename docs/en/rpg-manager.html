@@ -90,18 +90,43 @@
 
     <main>
         <div id="projects" class="container">
-                <h1 id="first-header">RPG Manager</h1>
-                <h2>What is it ?</h2>
-                <p>RPG Manager is a tool to help you manage your table RPG games. There are Game Master (GM) and player specific interfaces.</p>
-                <p>This software is currently being built to be used with the <a href="https://naheulbeuk.com/">Naheulbeuk</a> RPG (A french rpg project), but it will also work with other types of games such as D&amp;D. Because the software is open-source, you can add any features you might want for your specific game.</p>
-                <p>RPG Manager is written in <a href="https://www.oracle.com/technetwork/java/javase/documentation/index.html">JAVA</a> and uses the <a href="https://www.gtk.org/">GTK</a> framework for the interface.</p>
-                <h2>Functionalities</h2>
-                <h3>Exporting your games and characters</h3>
-                <p>RPG Manager allows you to export your games and characters to XML files which can then be imported into RPG Manager to transfer games information or transfer characters between games.</p>
-                <p>The XML files contain all the important information related to your game or character such as name, inventory, abilities, players...</p>
-                <h2>Status</h2>
-                <p>The software is in a <strong>VERY EARLY</strong> stage. Most of the structure is figured out and the export to XML is working but there is still a lot of work to do, especially when it comes to the UI.</p>
-                <p>There is no public repository as of yet. I am still waiting to have a <del>working</del> not completely unusable version(relevant xkcd : <a href="https://xkcd.com/349/">https://xkcd.com/349/</a>). This could take a long time...</p>                   
+		<h1 id="durbaton-a-simple-rpg-manager">Durbaton - A simple RPG Manager</h1>
+		<h2 id="what-is-it-">What is it ?</h2>
+		<p>Durbaton is a tool that allows you to manage your table RPG games. There are Game Master (GM) and player specific interfaces.</p>
+		<p>This software is currently being built to be used with the <a href="https://naheulbeuk.com/">Naheulbeuk</a> RPG (A french rpg project), but it will also work with other types of games such as D&amp;D. Because the software is open-source, you can add any features you might want for your specific game.</p>
+		<p>Durbaton is written in <a href="https://www.python.org/">Python</a> and uses the <a href="https://www.gtk.org/">GTK</a> framework with <a href="https://pygobject.readthedocs.io/en/latest/">PyGObject</a> for the interface.</p>
+		<h2 id="status">Status</h2>
+		<p>The software is in a <strong>VERY EARLY</strong> stage. Most of the structure and UI layout is figured out but there is still a lot of work to do.</p>
+		<h2 id="features">Features</h2>
+		<h3 id="exporting-your-games-and-characters">Exporting your games and characters</h3>
+		<p>Durbaton allows you to export your games and fr.org.durbatoncorp.characters to XML files which can then be imported into Durbaton to transfer games information or transfer fr.org.durbatoncorp.characters between games.</p>
+		<p>The XML files contain all the important information related to your game or character such as name, inventory, abilities, players...</p>
+		<h3 id="creating-editing-and-managing-your-games">Creating, editing and managing your games</h3>
+		<p>When starting Durbaton you will be presented with a list of all your saved games, giving you the necessery information (name of the game and the dungeon master, number of players, current turn number). Selecting a game will give you more option and information. For example you will be able to edit the game&#39;s parameters, launch the game or delete it.</p>
+		<h3 id="real-time-game-management">Real time game management</h3>
+		<p><strong>NOT IMPLEMENTED YET</strong></p>
+		<p>This is the main feature of this software, and the one I found to be lacking or incomplete in other solutions I tried. The first goal of this function is to provide players with an easy way to manager their characters during a game session. Players will be able to :</p>
+		<ul>
+		<li><p>Access and manage</p>
+		<ul>
+		<li><p>their character&#39;s inventory</p>
+		</li>
+		<li><p>their character&#39;s statistics (stength, wisdow, charisma...)</p>
+		</li>
+		<li><p>their character&#39;s health and mana during combat</p>
+		</li>
+		</ul>
+		</li>
+		<li><p>View :</p>
+		<ul>
+		<li><p>The game&#39;s map</p>
+		</li>
+		<li><p>The items avaible in the world</p>
+		</li>
+		</ul>
+		</li>
+		</ul>
+		<p>In addition to all the previously mentionned features, the dungeon master will be able to modify the list of items, add and manage NPCs and keep track of important informations.</p>   
         </div>
                 
     </main>
