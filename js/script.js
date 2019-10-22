@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-	$(function(){
-		$("#nav-placeholder").load("./docs/en/nav.html");
-	  });
+	// $(function(){
+	// 	$("#nav-placeholder").load("./docs/en/nav.html");
+	//   });
 
 	//Resizing of skills icons
 
