@@ -1,0 +1,50 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+
+	<link rel="icon" href="./ressources/img/profile-picture-with-background.png">
+
+	<title>Portfolio</title>
+	<base href="https://amaury-jaspar.github.io/portfolio/index.html">
+	
+	<!--Import Google Icon Font-->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	 <!-- Social media Font -->
+	<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- CSS -->
+
+		<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+		<!-- Local CSS -->
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+
+	<!-- JavaScript -->
+
+		<!-- Compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+			<!-- Local JavaScript -->
+	<script src ="./js/script.js"></script>
+
+	<script>
+		$.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/nav.html", function(data){
+			$("#nav-placeholder").replaceWith(data);
+		});
+		
+		$.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/header.html", function(data){
+			$("#header-placeholder").replaceWith(data);
+		});
+
+		$.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/footer.html", function(data){
+			$("#footer-placeholder").replaceWith(data);
+		});
+	</script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>

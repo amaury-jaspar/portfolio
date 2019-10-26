@@ -2,65 +2,20 @@
 
 <html lang="en">
 
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta charset="utf-8">
-	
-		<link rel="icon" href="ressources/img/profile-picture-with-background.png">
-	
-		<title>Portfolio</title>
-		<base href="https://amaury-jaspar.github.io/portfolio/index.html">
-		
-		<!--Import Google Icon Font-->
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		  <!-- Social media Font -->
-		<link rel="stylesheet" href="https://d1azc1qln24ryf.cloudfront.net/114779/Socicon/style-cf.css?9ukd8d">
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	
-		<!-- CSS -->
-	
-			<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	
-			<!-- Local CSS -->
-		<link rel="stylesheet" type="text/css" href="./css/styles.css">
-		<link rel="stylesheet" type="text/css" href="./css/header.css">
-		<link rel="stylesheet" type="text/css" href="./css/projects.css">
-	
-		<!-- JavaScript -->
-	
-			<!-- Compiled and minified JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	
-			<!-- JQuery -->
-		<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script> -->
+	<script>
+			$.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/head.html", function(data){
+				$("#head-placeholder").replaceWith(data);
+			});
+	</script>
 
-				<!-- Local JavaScript -->
-		<script src ="./js/script.js"></script>
-	
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	</head>
+	<div id="head-placeholder"> </div>
 
 <body class="grey lighten-4">
-	<header class="header">
-	
 
-	</header>
-
-	<div id="nav-placeholder">
+	<div id="header-placeholder">
 	</div>
 
-	<div id="nav-placeholder">
-	</div>
-
-	<!-- <script src="https://code.jquery.com/jquery.min.js"></script> -->
-	<script>
-		$.get("https://amaury-jaspar.github.io/portfolio/docs/en/nav.html", function(data){
-			$("#nav-placeholder").replaceWith(data);
-		});
-	</script>
+	<div id="nav-placeholder"></div>
 
 	<main>
 		<div id="" class="container">  
@@ -74,37 +29,8 @@
 		</div>
 				
 	</main>
-	
-	<footer class="page-footer blue-grey darken-2">
-		<div class="container">
-			<div class="row">
-				<div class="col s12 m8">
-					<ul>
-						<li>
-							<span class="desc-title">Personal email</span>
-							<span class="desc-content">a.jaspar@protonmail.com</span>
-						</li>
-						<li>
-							<span class="desc-title">Student email</span>
-							<span class="desc-content">amaury.jaspar@etu.umontpellier.fr</span>
-						</li>
-					</ul>
-				</div>
-				<div class="row col s12 m4 hide-on-small-only">
-					<ul>
-						<li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-github fa-3x"></i></a></li>
-						<li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-gitlab fa-3x"></i></a></li>
-						<li class="col s4"><a href="https://github.com/amaury-jaspar"><i class="fab fa-linkedin fa-3x"></i></a></li>		
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				@ 2019 Copyright - Amaury JASPAR
-			</div>
-		</div>
-	</footer>
+
+	<div id="footer-placeholder"></div>
 
 	</body>
 </html>
