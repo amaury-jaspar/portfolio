@@ -1,9 +1,16 @@
 $(document).ready(function(){
 
-	// $(function(){
-	// 	$("#nav-placeholder").load("./docs/en/nav.html");
-	//   });
+	// $.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/header.html", function(data){
+	// 	$("#header-placeholder").replaceWith(data);
+	// });
 
+	// $.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/nav.html", function(data){
+	// 	$("#nav-placeholder").replaceWith(data);
+	// });
+	
+	// $.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/footer.html", function(data){
+	// 	$("#footer-placeholder").replaceWith(data);
+	// });
 	//Resizing of skills icons
 
 	/**
