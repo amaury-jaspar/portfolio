@@ -4,20 +4,18 @@
 
 	<head>
 		<base href="https://amaury-jaspar.github.io/portfolio/index.html">
+		<!-- JQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<!-- Local Javascript -->
 		<script src ="./js/script.js"></script>
-		<!--<script>
-			$.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/head.html", function(data){
-				$("#head-placeholder").replaceWith(data);
-			});
-		</script> -->
 
-		<div include-html="./docs/en/common/head.html"></div>
+		<!-- Head placeholder -->
+		<div include-head="./docs/en/common/head.html"></div>
 	</head>
 
 	<body class="grey lighten-4">
 
-		<div id="header-placeholder"></div>
+		<div include-header="./docs/en/common/header.html"></div>
 
 		<div id="nav-placeholder"></div>
 

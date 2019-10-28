@@ -3,14 +3,18 @@ $(document).ready(function(){
 	// Includes of common HTML parts
 
 	var includeHTML = function() {
-		var z, i, elmnt, file, xhttp;
+		var z, i, elmnt, xhttp;
+		var head, header, nav, footer;
 		/* Loop through a collection of all HTML elements: */
 		z = document.getElementsByTagName("*");
 		for (i = 0; i < z.length; i++) {
 		  elmnt = z[i];
 		  /*search for elements with a certain atrribute:*/
-		  file = elmnt.getAttribute("include-html");
-		  if (file) {
+		  head = elmnt.getAttribute("include-head");
+		  header = elmnt.getAttribute("include-header");
+		  nav = elmnt.getAttribute("include-nav");
+		  footer = elmnt.getAttribute("include-footer");
+		  if (head && header && nav && footer) {
 			/* Make an HTTP request using the attribute value as the file name: */
 			xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
@@ -18,11 +22,18 @@ $(document).ready(function(){
 				if (this.status == 200) {elmnt.innerHTML = this.responseText;}
 				if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
 				/* Remove the attribute, and call this function once more: */
-				elmnt.removeAttribute("include-html");
+				elmnt.removeAttribute("include-head");
+				elmnt.removeAttribute("include-header");
+				elmnt.removeAttribute("include-nav");
+				elmnt.removeAttribute("include-footer");
+
 				includeHTML();
 			  }
 			}
-			xhttp.open("GET", file, true);
+			xhttp.open("GET", head, true);
+			xhttp.open("GET", header, true);
+			xhttp.open("GET", nav, true);
+			xhttp.open("GET", footer, true);
 			xhttp.send();
 			/* Exit the function: */
 			return;
