@@ -42,6 +42,8 @@ $(document).ready(function(){
 		}
 	  }
 
+	  includeHTML();
+
 
 	//Resizing of skills icons
 
