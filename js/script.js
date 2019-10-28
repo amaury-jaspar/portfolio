@@ -11,9 +11,9 @@ $(document).ready(function(){
 		  elmnt = z[i];
 		  /*search for elements with a certain atrribute:*/
 		  head = elmnt.getAttribute("include-head");
-		//   header = elmnt.getAttribute("include-header");
-		//   nav = elmnt.getAttribute("include-nav");
-		//   footer = elmnt.getAttribute("include-footer");
+		  header = elmnt.getAttribute("include-header");
+		  nav = elmnt.getAttribute("include-nav");
+		  footer = elmnt.getAttribute("include-footer");
 		  if (head) {
 			/* Make an HTTP request using the attribute value as the file name: */
 			xhttp = new XMLHttpRequest();
@@ -23,17 +23,17 @@ $(document).ready(function(){
 				if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
 				/* Remove the attribute, and call this function once more: */
 				elmnt.removeAttribute("include-head");
-				// elmnt.removeAttribute("include-header");
-				// elmnt.removeAttribute("include-nav");
-				// elmnt.removeAttribute("include-footer");
+				elmnt.removeAttribute("include-header");
+				elmnt.removeAttribute("include-nav");
+				elmnt.removeAttribute("include-footer");
 
 				includeHTML();
 			  }
 			}
 			xhttp.open("GET", head, true);
-			// xhttp.open("GET", header, true);
-			// xhttp.open("GET", nav, true);
-			// xhttp.open("GET", footer, true);
+			xhttp.open("GET", header, true);
+			xhttp.open("GET", nav, true);
+			xhttp.open("GET", footer, true);
 			xhttp.send();
 			/* Exit the function: */
 			return;
