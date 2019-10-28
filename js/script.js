@@ -25,7 +25,7 @@ $(document).ready(function(){
 				includeHTML();
 			  }
 			}
-			xhttp.open("GET", file, true);
+			xhttp.open("GET", "./docs/en/common/" + file, true);
 			xhttp.send();
 			/* Exit the function: */
 			return;
