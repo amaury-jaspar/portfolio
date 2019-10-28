@@ -34,8 +34,7 @@ $(document).ready(function(){
 	  }
 
 	  includeHTML("include-head");
-	  includeHTML("include-header");
-	  includeHTML("indluce-nav");
+	  includeHTML("include-nav");
 	  includeHTML("include-footer");
 
 
