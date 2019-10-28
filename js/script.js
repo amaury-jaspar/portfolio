@@ -2,19 +2,17 @@ $(document).ready(function(){
 
 	// Includes of common HTML parts
 
-	var includeHTML = function() {
+	var includeHTML = function(attribute) {
 		var z, i, elmnt, xhttp;
 		var head, header, nav, footer;
+		var tag = attribute;
 		/* Loop through a collection of all HTML elements: */
 		z = document.getElementsByTagName("*");
 		for (i = 0; i < z.length; i++) {
 		  elmnt = z[i];
 		  /*search for elements with a certain atrribute:*/
-		  head = elmnt.getAttribute("include-head");
-		  header = elmnt.getAttribute("include-header");
-		  nav = elmnt.getAttribute("include-nav");
-		  footer = elmnt.getAttribute("include-footer");
-		  if (head) {
+		  file = elmnt.getAttribute(attribute);
+		  if (file) {
 			/* Make an HTTP request using the attribute value as the file name: */
 			xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
@@ -22,18 +20,12 @@ $(document).ready(function(){
 				if (this.status == 200) {elmnt.innerHTML = this.responseText;}
 				if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
 				/* Remove the attribute, and call this function once more: */
-				elmnt.removeAttribute("include-head");
-				elmnt.removeAttribute("include-header");
-				elmnt.removeAttribute("include-nav");
-				elmnt.removeAttribute("include-footer");
+				elmnt.removeAttribute("file");
 
 				includeHTML();
 			  }
 			}
-			xhttp.open("GET", head, true);
-			xhttp.open("GET", header, true);
-			xhttp.open("GET", nav, true);
-			xhttp.open("GET", footer, true);
+			xhttp.open("GET", file, true);
 			xhttp.send();
 			/* Exit the function: */
 			return;
@@ -41,7 +33,10 @@ $(document).ready(function(){
 		}
 	  }
 
-	  includeHTML();
+	  includeHTML("include-head");
+	  includeHTML("include-header");
+	  includeHTML("indluce-nav");
+	  includeHTML("include-footer");
 
 
 	//Resizing of skills icons
