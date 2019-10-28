@@ -1,23 +1,11 @@
 $(document).ready(function(){
 
-	// $.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/header.html", function(data){
-	// 	$("#header-placeholder").replaceWith(data);
-	// });
-
-	// $.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/nav.html", function(data){
-	// 	$("#nav-placeholder").replaceWith(data);
-	// });
-	
-	// $.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/footer.html", function(data){
-	// 	$("#footer-placeholder").replaceWith(data);
-	// });
-
 	// Includes of common HTML parts
 
 	var includeHTML = function() {
 		var z, i, elmnt, file, xhttp;
 		/* Loop through a collection of all HTML elements: */
-		z = document.getElementsByTagName("*");
+		z = window.getElementsByTagName("*");
 		for (i = 0; i < z.length; i++) {
 		  elmnt = z[i];
 		  /*search for elements with a certain atrribute:*/
