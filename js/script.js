@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	// Includes of common HTML parts
 
-	function includeHTML() {
+	var includeHTML = function() {
 		var z, i, elmnt, file, xhttp;
 		/* Loop through a collection of all HTML elements: */
 		z = document.getElementsByTagName("*");
