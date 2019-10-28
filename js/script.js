@@ -5,7 +5,7 @@ $(document).ready(function(){
 	var includeHTML = function() {
 		var z, i, elmnt, file, xhttp;
 		/* Loop through a collection of all HTML elements: */
-		z = window.getElementsByTagName("*");
+		z = document.getElementsByTagName("*");
 		for (i = 0; i < z.length; i++) {
 		  elmnt = z[i];
 		  /*search for elements with a certain atrribute:*/
