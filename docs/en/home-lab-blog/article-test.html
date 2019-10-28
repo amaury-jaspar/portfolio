@@ -8,11 +8,9 @@
 			$.get("https://amaury-jaspar.github.io/portfolio/docs/en/common/head.html", function(data){
 				$("#head-placeholder").replaceWith(data);
 			});
-		</script>
+		</script> -->
 
-		<div id="head-placeholder"></div> -->
-		
-		<!-- #include file="./docs/en/common/head.html" -->
+		<div include-html="./docs/en/common/head.html"></div>
 	</head>
 
 	<body class="grey lighten-4">
@@ -37,4 +35,8 @@
 		<div id="footer-placeholder"></div>
 
 	</body>
+
+	<script>
+		includeHTML();
+	</script>
 </html>
