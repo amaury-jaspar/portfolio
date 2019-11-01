@@ -23,10 +23,15 @@ header div > h1 {
 
 header .btn {
     display: flex;
-    background-color:#90a4ae;
+    background-color:#607d8b;
     margin: 20px auto 0 auto;
     width:120px;
     font-size:80%; 
+}
+
+header .card-content .btn i {
+    margin-left: 0;
+    margin-right:15px;
 }
 
 header .row .col.s4 {
