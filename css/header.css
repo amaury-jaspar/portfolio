@@ -1,27 +1,27 @@
-header div > h1 {
+header div > h1, #table-of-content {
     margin-left:10%;
 }
 
-#top-info-list {
+#top-info-list, #table-of-content {
     margin-left  : 40%;
 }
 
-#top-info-list > li:first-child span {
+#top-info-list > li:first-child span, #table-of-content {
     font-size:120%;
 }
 
-.desc-title {
+.desc-title, #table-of-content {
     display: inline-block;
     width : 140px;
     font-weight:bold;
 }
 
-#profile {
+#profile, #table-of-content {
     height:160px;
     margin-bottom:0px;
 }
 
-header .btn {
+header .btn, #table-of-content {
     display: flex;
     background-color:#607d8b;
     margin: 20px auto 0 auto;
@@ -29,42 +29,42 @@ header .btn {
     font-size:80%; 
 }
 
-header #slide-out .btn {
+header #slide-out .btn, #table-of-content {
     background-color: #90a4ae ;
 }
 
-header .btn i {
+header .btn i, #table-of-content {
     margin-left: 0;
     margin-right:15px;
 }
 
-header .row .col.s4 {
+header .row .col.s4, #table-of-content {
     height: inherit;
     padding-right:10%;
     width:40%;
 }
 
-#profile-picture {
+#profile-picture, #table-of-content {
     padding:2px;
     width:25%;
     height:auto;
     margin-left:auto;
 }
 
-#profile-info-left {
+#profile-info-left, #table-of-content{
     margin-left : auto;
 }
 
-header .material-icons {
+header .material-icons, #table-of-content {
     color: white;
 }
 
-.collapsible-header span {
+.collapsible-header span, #table-of-content {
     padding: 0 16px;
     font-weight: 500;
 } 
 
-.sidenav .collapsible-body  li a {
+.sidenav .collapsible-body  li a, #table-of-content {
     padding: 0 23.5px 0 50px;
 }
 
