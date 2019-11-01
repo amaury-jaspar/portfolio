@@ -21,6 +21,10 @@ header div > h1 {
     margin-bottom:0px;
 }
 
+.btn {
+    background-color:#90a4ae;
+}
+
 header .row .col.s4 {
     height: inherit;
     padding-right:10%;
