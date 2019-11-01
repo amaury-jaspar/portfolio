@@ -21,8 +21,12 @@ header div > h1 {
     margin-bottom:0px;
 }
 
-.btn {
+header .btn {
+    display: flex;
     background-color:#90a4ae;
+    margin: 20px auto 0 auto;
+    width:120px;
+    font-size:80%; 
 }
 
 header .row .col.s4 {
