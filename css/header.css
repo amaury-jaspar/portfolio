@@ -29,7 +29,11 @@ header .btn {
     font-size:80%; 
 }
 
-header .card-content .btn i {
+header #slide-out .btn {
+    background-color: #90a4ae ;
+}
+
+header .btn i {
     margin-left: 0;
     margin-right:15px;
 }
