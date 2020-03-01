@@ -24,6 +24,10 @@ h3 {
 
     /******* General *******/
 
+body {
+    background-color: #353b43;
+}
+
 .fab, .fas, .material-icons {
     color:#62757f;
 }    
